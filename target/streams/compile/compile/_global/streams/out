@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /home/knoldus/Downloads/stackoverflow/src/main/scala/stackoverflow/StackOverflow.scala:205:125 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m205 |[0m    vectors.map([36mv[0m => (findClosest(v, means), v)).groupByKey.mapValues(averageVectors).collect.foreach([36mc[0m => newMeans.update(c._1, c._2))[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                                                                                                           [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                                  Found:    (Int, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                                  Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
