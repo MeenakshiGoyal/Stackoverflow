@@ -44,4 +44,4 @@ class StackOverflowSuite extends munit.FunSuite {
 }
 
   import scala.concurrent.duration.given
-  override val munitTimeout = 300.seconds
+  val munitTimeout = 300.seconds

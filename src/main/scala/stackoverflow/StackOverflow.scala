@@ -202,7 +202,7 @@ class StackOverflow extends StackOverflowInterface with Serializable {
   @tailrec final def kmeans(means: Array[(Int, Int)], vectors: RDD[(Int, Int)], iter: Int = 1, debug: Boolean = false): Array[(Int, Int)] = {
     val newMeans = means.clone
 
-    vectors.map(v => (findClosest(v, means), v)).groupByKey.mapValues(averageVectors).collect.foreach(c => newMeans.update(c._1, c._2))
+    vectors.map(v => (findClosest(v, means), v)).groupByKey.mapValues(averageVectors).collect.foreach(c => newMeans.update(c._1._1, c._2))
 
     val distance = euclideanDistance(means, newMeans)
 
